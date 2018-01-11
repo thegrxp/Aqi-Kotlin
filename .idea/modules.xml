@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin.cmd/aqikotlin.cmd.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin.cmd/aqikotlin.cmd.iml" group="aqikotlin.cmd" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin.cmd/aqikotlin.cmd_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin.cmd/aqikotlin.cmd_main.iml" group="aqikotlin.cmd" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin.cmd/aqikotlin.cmd_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin.cmd/aqikotlin.cmd_test.iml" group="aqikotlin.cmd" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin.library/aqikotlin.library.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin.library/aqikotlin.library.iml" group="aqikotlin.library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin.library/aqikotlin.library_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin.library/aqikotlin.library_main.iml" group="aqikotlin.library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin.library/aqikotlin.library_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin.library/aqikotlin.library_test.iml" group="aqikotlin.library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin_main.iml" group="aqikotlin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aqikotlin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aqikotlin_test.iml" group="aqikotlin" />
+    </modules>
+  </component>
+</project>

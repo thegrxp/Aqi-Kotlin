@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="aqikotlin.cmd_main" target="1.8" />
+      <module name="aqikotlin.cmd_test" target="1.8" />
+      <module name="aqikotlin.library_main" target="1.8" />
+      <module name="aqikotlin.library_test" target="1.8" />
+      <module name="aqikotlin_main" target="1.8" />
+      <module name="aqikotlin_test" target="1.8" />
+      <module name="cmd_main" target="1.8" />
+      <module name="Cmd_main" target="1.8" />
+      <module name="cmd_test" target="1.8" />
+      <module name="Cmd_test" target="1.8" />
+      <module name="library_main" target="1.8" />
+      <module name="Library_main" target="1.8" />
+      <module name="library_test" target="1.8" />
+      <module name="Library_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
