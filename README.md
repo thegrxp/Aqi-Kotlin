@@ -35,11 +35,11 @@ Convert AQI to pollutant concentration:
 
 ### Library
 
-Convert pollutant concentration to AQI (take Strings as arguments):
+Convert pollutant concentration to AQI (take Strings as arguments, return Int):
 
     $ val aqi = Calculator().getAqi("pm25", "107")
 
-Convert AQI to pollutant concentration (take Strings as arguments):
+Convert AQI to pollutant concentration (take Strings as arguments, return either Int or Double):
 
     $ val cc = Calculator().getConcentration("pm10", "174")
 
@@ -47,7 +47,7 @@ Convert AQI to pollutant concentration (take Strings as arguments):
 
 ## Library Installation
 
-### Maven:
+### Maven
 
     <dependency>
     <groupId>com.thegrxp.aqikotlin</groupId>
@@ -56,7 +56,7 @@ Convert AQI to pollutant concentration (take Strings as arguments):
     <type>pom</type>
     </dependency>
 
-### Gradle:
+### Gradle
 
     compile 'com.thegrxp.aqikotlin:aqikotlin.library:1.0'
 
