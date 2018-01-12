@@ -4,12 +4,10 @@ Command Line Interface and library to convert between Air Quality Index (AQI) va
 Project and Readme are WIP.
 
 
-Usage
-=====
+## Usage
 
 
-Command Line
-------------
+### Command Line
 
 List pollutants and formats:
 
@@ -35,8 +33,7 @@ Convert AQI to pollutant concentration:
     $ pm25:50.1
 
 
-Library
--------
+### Library
 
 Convert pollutant concentration to AQI (take Strings as arguments):
 
@@ -45,3 +42,22 @@ Convert pollutant concentration to AQI (take Strings as arguments):
 Convert AQI to pollutant concentration (take Strings as arguments):
 
     $ val cc = Calculator().getConcentration("pm10", "174")
+
+
+
+## Library Installation
+
+### Maven:
+
+    <dependency>
+    <groupId>com.thegrxp.aqikotlin</groupId>
+    <artifactId>aqikotlin.library</artifactId>
+    <version>1.0</version>
+    <type>pom</type>
+    </dependency>
+
+### Gradle:
+
+    compile 'com.thegrxp.aqikotlin:aqikotlin.library:1.0'
+
+
