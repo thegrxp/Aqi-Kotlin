@@ -37,11 +37,11 @@ Convert AQI to pollutant concentration:
 
 Convert pollutant concentration to AQI (take Strings as arguments, return Int):
 
-    $ val aqi = Calculator().getAqi("pm25", "107")
+    val aqi = Calculator().getAqi("pm25", "107")
 
 Convert AQI to pollutant concentration (take Strings as arguments, return either Int or Double):
 
-    $ val cc = Calculator().getConcentration("pm10", "174")
+    val cc = Calculator().getConcentration("pm10", "174")
 
 
 
