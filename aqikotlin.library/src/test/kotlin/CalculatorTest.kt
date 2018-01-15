@@ -9,8 +9,9 @@ class CalculatorTest {
         // given
         val pollutantCode = "pm10"
         val value = "123"
+        val algorithm = "epa"
         // when
-        val result = Calculator().getAqi(pollutantCode, value)
+        val result = Calculator().getAqi(pollutantCode, value, algorithm)
         // then
         assertEquals(85, result)
     }
@@ -20,8 +21,9 @@ class CalculatorTest {
         // given
         val pollutantCode = "pm98"
         val value = "123"
+        val algorithm = "epa"
         // when
-        val result = Calculator().getAqi(pollutantCode, value)
+        val result = Calculator().getAqi(pollutantCode, value, algorithm)
         // then
         assertEquals(0, result)
     }
@@ -31,8 +33,9 @@ class CalculatorTest {
         // given
         val pollutantCode = "pm25"
         val value = "3012"
+        val algorithm = "epa"
         // when
-        val result = Calculator().getAqi(pollutantCode, value)
+        val result = Calculator().getAqi(pollutantCode, value, algorithm)
         // then
         assertEquals(0, result)
     }
@@ -42,8 +45,9 @@ class CalculatorTest {
         // given
         val pollutantCode = "pm10"
         val value = "123"
+        val algorithm = "epa"
         // when
-        val result = Calculator().getConcentration(pollutantCode, value)
+        val result = Calculator().getConcentration(pollutantCode, value, algorithm)
         // then
         assertEquals(199, result)
     }
@@ -53,8 +57,9 @@ class CalculatorTest {
         // given
         val pollutantCode = "pm25"
         val value = "123"
+        val algorithm = "epa"
         // when
-        val result = Calculator().getConcentration(pollutantCode, value)
+        val result = Calculator().getConcentration(pollutantCode, value, algorithm)
         // then
         assertEquals(44.4, result)
     }
@@ -64,8 +69,9 @@ class CalculatorTest {
         // given
         val pollutantCode = "pm98"
         val value = "123"
+        val algorithm = "epa"
         // when
-        val result = Calculator().getConcentration(pollutantCode, value)
+        val result = Calculator().getConcentration(pollutantCode, value, algorithm)
         // then
         assertEquals(0, result)
     }

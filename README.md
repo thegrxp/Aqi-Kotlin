@@ -1,5 +1,5 @@
 # Aqi-Kotlin
-Command Line Interface and library to convert between Air Quality Index (AQI) value and pollutant concentration, using the US EPA AQI calculation method.
+Command Line Interface and library to convert between Air Quality Index (AQI) value and pollutant concentration, using the US US_EPA AQI calculation method.
 
 Project and Readme are WIP.
 
@@ -13,7 +13,7 @@ Command Line
 
 List pollutants and formats:
 
-    $ java -jar cmd-1.0.jar --list
+    $ java -jar cmd-1.0.jar --pollutantList
     $ Pollutants: pm10 (µg/m³), o3 (ppm), co (ppm), no2 (ppb), so2 (ppb), pm25 (µg/m³)
     $ Formats: pm10 (pm10:174), o3 (o3:0.081), co (co:12.9), no2 (no2:431), so2 (so2:89), pm25 (pm25:37.8)
     

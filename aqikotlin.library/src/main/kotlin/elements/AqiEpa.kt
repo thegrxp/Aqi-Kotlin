@@ -2,7 +2,7 @@ package elements
 
 class AqiEpa {
 
-    val aqi = listOf(
+    private val aqi: List<Number> = listOf(
             0, 50,
             51, 100,
             101, 150,
@@ -11,7 +11,7 @@ class AqiEpa {
             301, 400,
             401, 500)
 
-    val pm25 = listOf(
+    private val pm25: List<Number> = listOf(
             0.0, 12.0,
             12.1, 35.4,
             35.5, 55.4,
@@ -20,7 +20,7 @@ class AqiEpa {
             250.5, 350.4,
             350.5, 500.4)
 
-    val pm10 = listOf(
+    private val pm10: List<Number> = listOf(
             0, 54,
             55, 154,
             155, 254,
@@ -29,7 +29,7 @@ class AqiEpa {
             425, 504,
             505, 604)
 
-    val co = listOf(
+    private val co: List<Number> = listOf(
             0.0, 4.4,
             4.5, 9.4,
             9.5, 12.4,
@@ -38,7 +38,7 @@ class AqiEpa {
             30.5, 40.4,
             40.5, 50.4)
 
-    val no2 = listOf(
+    private val no2: List<Number> = listOf(
             0, 53,
             54, 100,
             101, 360,
@@ -47,7 +47,7 @@ class AqiEpa {
             1250, 1649,
             1650, 2049)
 
-    val so2 = listOf(
+    private val so2: List<Number> = listOf(
             0, 35,
             36, 75,
             76, 185,
@@ -56,10 +56,12 @@ class AqiEpa {
             605, 804,
             805, 1004)
 
-    val o3 = listOf(
+    private val o3: List<Number> = listOf(
             0.000, 0.054,
             0.055, 0.070,
             0.071, 0.085,
             0.086, 0.105,
             0.106, 0.200)
+
+    val lists: List<List<Number>> = listOf(aqi, pm25, pm10, co, no2, so2, o3)
 }
