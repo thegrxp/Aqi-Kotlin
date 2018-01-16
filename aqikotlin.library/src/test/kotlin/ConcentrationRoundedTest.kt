@@ -1,6 +1,7 @@
+import aqikotlin.library.constants.*
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import utils.*
+import aqikotlin.library.utils.ConcentrationRounded
 
 class ConcentrationRoundedTest {
     @Test

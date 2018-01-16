@@ -1,10 +1,7 @@
-import calculator.Calculator
+import aqikotlin.library.Calculator
+import aqikotlin.library.constants.*
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import utils.EPA
-import utils.MEP
-import utils.POLLUTANT_PM10
-import utils.POLLUTANT_PM25
 
 class CalculatorTest {
 
@@ -91,4 +88,5 @@ class CalculatorTest {
         // then
         assertEquals(87, result)
     }
+
 }
