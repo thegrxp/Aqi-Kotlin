@@ -2,7 +2,7 @@ package aqikotlin.library.constants
 
 const val AQI = "aqi"
 
-// Constants for library.algorithms
+// Constants for algorithms
 const val EPA = "epa"
 const val MEP = "mep"
 
