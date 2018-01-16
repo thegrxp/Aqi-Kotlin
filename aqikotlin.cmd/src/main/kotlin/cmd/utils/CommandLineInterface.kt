@@ -18,12 +18,12 @@ class CommandLineInterface(parser: ArgParser) {
             "--mep" to Algorithms.MEP,
             help = "The algorithm to use, default algorithm is '--epa'." +
                     " '--epa' select United States Environmental Protection Agency (EPA) algorithm." +
-                    " '--cc' select China Ministry of Environmental Protection (MEP) algorithm.")
+                    " '--mep' select China Ministry of Environmental Protection (MEP) algorithm.")
             .default(Algorithms.EPA)
 
     val list by parser.flagging("-l",
             "--list",
-            help = "List pollutants and formats")
+            help = "List pollutants and units")
 
     val values by parser.positionalList("Format: 'pm25:136'. Use '-l' argument to list available pollutants",
             1..Int.MAX_VALUE).default(null)
