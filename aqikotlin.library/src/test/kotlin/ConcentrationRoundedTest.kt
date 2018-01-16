@@ -1,9 +1,6 @@
-import elements.ConcentrationRounded
-import elements.POLLUTANT_CO
-import elements.POLLUTANT_O3
-import elements.POLLUTANT_PM10
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import utils.*
 
 class ConcentrationRoundedTest {
     @Test
@@ -11,8 +8,9 @@ class ConcentrationRoundedTest {
         // given
         val pollutantCode = POLLUTANT_PM10
         val pollutantConcentration = 123.234
+        val algorithm = EPA
         // when
-        val result = ConcentrationRounded(pollutantCode, pollutantConcentration).
+        val result = ConcentrationRounded(pollutantCode, pollutantConcentration, algorithm).
                 getRoundedConcentrationOnPollutantCode()
         // then
         assertEquals(123, result)
@@ -21,10 +19,11 @@ class ConcentrationRoundedTest {
     @Test
     fun roundToOneDecimalPlace() {
         // given
-        val pollutantCode = POLLUTANT_CO
+        val pollutantCode = POLLUTANT_CO_8H
         val pollutantConcentration = 10.76455
+        val algorithm = EPA
         // when
-        val result = ConcentrationRounded(pollutantCode, pollutantConcentration).
+        val result = ConcentrationRounded(pollutantCode, pollutantConcentration, algorithm).
                 getRoundedConcentrationOnPollutantCode()
         // then
         assertEquals(10.8, result)
@@ -33,10 +32,11 @@ class ConcentrationRoundedTest {
     @Test
     fun roundToThreeDecimalPlace() {
         // given
-        val pollutantCode = POLLUTANT_O3
+        val pollutantCode = POLLUTANT_O3_1H
         val pollutantConcentration = 0.07621231
+        val algorithm = EPA
         // when
-        val result = ConcentrationRounded(pollutantCode, pollutantConcentration).
+        val result = ConcentrationRounded(pollutantCode, pollutantConcentration, algorithm).
                 getRoundedConcentrationOnPollutantCode()
         // then
         assertEquals(0.076, result)

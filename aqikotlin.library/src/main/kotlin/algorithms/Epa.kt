@@ -1,6 +1,8 @@
-package elements
+package algorithms
 
-class AqiEpa {
+import utils.*
+
+class Epa {
 
     private val aqi: List<Number> = listOf(
             0, 50,
@@ -21,7 +23,7 @@ class AqiEpa {
             350.5, 500.4)
 
     private val pm10: List<Number> = listOf(
-            0, 54,
+            0.0, 54,
             55, 154,
             155, 254,
             255, 354,
@@ -29,7 +31,7 @@ class AqiEpa {
             425, 504,
             505, 604)
 
-    private val co: List<Number> = listOf(
+    private val co_8h: List<Number> = listOf(
             0.0, 4.4,
             4.5, 9.4,
             9.5, 12.4,
@@ -38,8 +40,8 @@ class AqiEpa {
             30.5, 40.4,
             40.5, 50.4)
 
-    private val no2: List<Number> = listOf(
-            0, 53,
+    private val no2_1h: List<Number> = listOf(
+            0.0, 53,
             54, 100,
             101, 360,
             361, 649,
@@ -47,8 +49,8 @@ class AqiEpa {
             1250, 1649,
             1650, 2049)
 
-    private val so2: List<Number> = listOf(
-            0, 35,
+    private val so2_1h: List<Number> = listOf(
+            0.0, 35,
             36, 75,
             76, 185,
             186, 304,
@@ -56,12 +58,38 @@ class AqiEpa {
             605, 804,
             805, 1004)
 
-    private val o3: List<Number> = listOf(
+    private val o3_1h: List<Number> = listOf(
+            0.0, 0,
+            0, 0,
+            0.125, 0.164,
+            0.165, 0.204,
+            0.205, 0.404,
+            0.405, 0.504,
+            0.505, 0.604)
+
+    private val o3_8h: List<Number> = listOf(
             0.000, 0.054,
             0.055, 0.070,
             0.071, 0.085,
             0.086, 0.105,
             0.106, 0.200)
 
-    val lists: List<List<Number>> = listOf(aqi, pm25, pm10, co, no2, so2, o3)
+    val lists: Map<String, List<Number>> = mapOf(
+            AQI to aqi,
+            POLLUTANT_PM25 to pm25,
+            POLLUTANT_PM10 to pm10,
+            POLLUTANT_CO_8H to co_8h,
+            POLLUTANT_NO2_1H to no2_1h,
+            POLLUTANT_SO2_1H to so2_1h,
+            POLLUTANT_O3_1H to o3_1h,
+            POLLUTANT_O3_8H to o3_8h)
+
+    val units = listOf(
+            "$POLLUTANT_PM10 (µg/m³)",
+            "$POLLUTANT_O3_1H (ppm)",
+            "$POLLUTANT_O3_8H (ppm)",
+            "$POLLUTANT_CO_8H (ppm)",
+            "$POLLUTANT_NO2_1H (ppb)",
+            "$POLLUTANT_SO2_1H (ppb)",
+            "$POLLUTANT_PM25 (µg/m³)")
 }
