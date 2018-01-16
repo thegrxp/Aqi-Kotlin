@@ -1,5 +1,5 @@
 # Aqi-Kotlin
-Library and Command Line Interface (CLI) to convert between Air Quality Index (AQI) value and pollutant concentration, using the using the following algorithms:
+Library and Command Line Interface (CLI) to convert between Air Quality Index (AQI) value and pollutant concentration, using the following algorithms:
                                                                                                                            
 * United States Environmental Protection Agency (EPA)
 * China Ministry of Environmental Protection (MEP)                                                                                                                                                                                                                                                 China Ministry of Environmental Protection (MEP)
