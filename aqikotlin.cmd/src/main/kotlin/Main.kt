@@ -1,10 +1,8 @@
-package cmd
-
-import algorithms.Epa
-import algorithms.Mep
 import cmd.calculator.Calculator
 import cmd.utils.CommandLineInterface
 import com.xenomachina.argparser.*
+import constants.EPA_UNITS
+import constants.MEP_UNITS
 
 fun main(args: Array<String>) = mainBody {
     try {
@@ -25,7 +23,7 @@ fun main(args: Array<String>) = mainBody {
         }
 
         when (list) {
-            true -> println("EPA: " + Epa().units + "\nMEP: " + Mep().units)
+            true -> println("EPA: $EPA_UNITS \nMEP: $MEP_UNITS")
         }
 
     } catch (ex: UnrecognizedOptionException) {

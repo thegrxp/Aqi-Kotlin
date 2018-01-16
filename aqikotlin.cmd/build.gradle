@@ -10,7 +10,7 @@ buildscript {
 }
 
 group 'com.thegrxp.aqikotlin'
-version '1.0'
+version '1.1'
 
 apply plugin: 'kotlin'
 
@@ -27,7 +27,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'cmd.MainKt'
+        attributes 'Main-Class': 'MainKt'
     }
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }

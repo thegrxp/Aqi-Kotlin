@@ -1,6 +1,6 @@
 package algorithms
 
-import utils.*
+import constants.*
 
 class Epa {
 
@@ -74,7 +74,7 @@ class Epa {
             0.086, 0.105,
             0.106, 0.200)
 
-    val lists: Map<String, List<Number>> = mapOf(
+    internal val lists: Map<String, List<Number>> = mapOf(
             AQI to aqi,
             POLLUTANT_PM25 to pm25,
             POLLUTANT_PM10 to pm10,
@@ -83,13 +83,4 @@ class Epa {
             POLLUTANT_SO2_1H to so2_1h,
             POLLUTANT_O3_1H to o3_1h,
             POLLUTANT_O3_8H to o3_8h)
-
-    val units = listOf(
-            "$POLLUTANT_PM10 (µg/m³)",
-            "$POLLUTANT_O3_1H (ppm)",
-            "$POLLUTANT_O3_8H (ppm)",
-            "$POLLUTANT_CO_8H (ppm)",
-            "$POLLUTANT_NO2_1H (ppb)",
-            "$POLLUTANT_SO2_1H (ppb)",
-            "$POLLUTANT_PM25 (µg/m³)")
 }

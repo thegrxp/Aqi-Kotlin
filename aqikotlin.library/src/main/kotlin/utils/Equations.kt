@@ -2,7 +2,7 @@ package utils
 
 import kotlin.math.round
 
-class Equations {
+internal class Equations {
 
     fun concentrationToAqi(cp: Double, bpLo: Double, bpHi: Double, inLo: Number, inHi: Number): Int {
         return round((inHi.toInt() - inLo.toInt()) / (bpHi - bpLo) * (cp - bpLo) + inLo.toInt()).toInt()

@@ -3,6 +3,7 @@ package calculator
 import algorithms.Epa
 import algorithms.Mep
 import utils.*
+import constants.*
 
 class Calculator {
 

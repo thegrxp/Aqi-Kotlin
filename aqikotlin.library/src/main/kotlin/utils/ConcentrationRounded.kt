@@ -1,8 +1,9 @@
 package utils
 
+import constants.*
 import kotlin.math.round
 
-class ConcentrationRounded(private val pollutantCode: String, private val pollutantConcentration: Double,
+internal class ConcentrationRounded(private val pollutantCode: String, private val pollutantConcentration: Double,
                            private val algorithm: String){
 
     fun getRoundedConcentrationOnPollutantCode(): Number {
